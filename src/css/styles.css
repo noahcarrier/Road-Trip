@@ -1,11 +1,12 @@
-@font-face {
-    src: url(fonts/Noot.otf); 
+@font-face { 
     font-family: noot; 
+    src: url(fonts/Noot.otf);
 }
 
 @font-face {
-    src: url(fonts/norwester.otf); 
     font-family: norwester; 
+    src: url(fonts/norwester.otf); 
+   
 }
 
 footer {
