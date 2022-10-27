@@ -6,22 +6,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RoadTrip About</title>
         <link rel="stylesheet" href="src/css/styles.css">
+
+        <style>
+            .roadsigns {
+                margin: 1%; 
+                top: -350px; 
+                left: -15px;
+                position: relative;
+            }
+
+            .first-txt {
+                position: absolute; 
+                top: 400px; 
+                left: 300px;
+            }
+
+            .second-txt {
+                position: absolute; 
+                top: 500px; 
+                left: 650px; 
+            }
+
+            .third-txt {
+                position: absolute; 
+                top: 600px; 
+                left: 655px; 
+            }
+
+            .fourth-txt {
+                position: absolute; 
+                top: 700px; 
+                left: 610px; 
+            }
+            .fifth-txt {
+                position: absolute; 
+                top: 800px; 
+                left: 625px; 
+            }
+        </style>
+
     </head>
 
     <body style = "background-color: #98e0e5">
 
         <h1><center>ABOUT</center></h1>
 
-        <h6><center>Hi there! Thank you for using RoadTrip. Select a state and receive information about its</center></h6>
-
-        <h6><center>Road Rules</center></h6>
-        <h6><center>Fun Facts</center></h6>
-        <h6><center>Famous Landmarks</center></h6>
-
-        <h6><center>Happy Travels! :)</center></h6>
+        <!-- Positions the road signs image behind the text -->
+        <div class = "roadsigns">
+            <center><img src = "icons/RoadSigns.png" alt = "Road Signs Icon" width = "1200" height = "1200"></center>
+            <h3 class = "first-txt">Hi there! Thank you for using RoadTrip. Select a state and receive information about its</h3></center>
+            <h3 class = "second-txt">Road Rules</h3>
+            <h3 class = "third-txt">Fun Facts</h3>
+            <h3 class = "fourth-txt">Famous Landmarks</h3>
+            <h3 class = "fifth-txt">Happy Travels! :)</h3>
+        </div>
 
         <footer>
-            RoadTrip Project Created by Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
+            RoadTrip Project Created By: Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
         </footer>
     
     </body>
