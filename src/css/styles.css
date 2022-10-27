@@ -7,3 +7,21 @@ footer {
     color: black;
     background: rgb(186, 186, 186);
 }
+
+@font-face {
+    src: url(fonts/Noot.otf); 
+    font-family: noot; 
+}
+
+@font-face {
+    src: url(fonts/norwester.otf); 
+    font-family: norwester; 
+}
+
+h1 {
+    font-family: noot; 
+}
+
+h6 {
+    font-family: norwester; 
+}
