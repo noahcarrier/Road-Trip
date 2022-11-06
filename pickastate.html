@@ -1,30 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RoadTrip Pick A State</title>
-        <link rel="stylesheet" href="src/css/styles.css">
+        <link rel="stylesheet" href="src/css/pickastatestyles.css">
     </head>
+
+    <style>
+
+        .dirt-road-bottom {
+            top: 415px; 
+            left: -150px; 
+            position: absolute; 
+        }
+
+        .dirt-road-top {
+            top: 480px; 
+            left: -150px;
+            position: absolute
+        }
+
+        .road {
+            top: 295px; 
+            left: -125px; 
+            position: absolute; 
+        }
+
+        .car {
+            top: 275px; 
+            left: -70px; 
+            position: absolute; 
+        }
+
+        .menu-bar {
+            top: -80px; 
+            left: 360px; 
+            position: absolute; 
+        }
+
+        .cloud-left {
+            top: -175px; 
+            left: -130px; 
+            position: absolute; 
+        }
+
+        .tree-stump {
+            top: 375px; 
+            left: 1145px; 
+            position: absolute; 
+        }
+
+        .cactus {
+            top: 300px; 
+            left: 950px; 
+            position: absolute; 
+        }
+
+    </style>
 
     <body style = "background-color: #98e0e5">
 
-        <h1><center>Pick A State</center></h1>
+        <!-- Images -->
+        <img class = "dirt-road-bottom" src = "icons/DirtRoad.png" alt = "Dirt Road Bottom Icon" width = "2000" height = "700">
+        <img class = "road" src = "icons/Road.png" alt = "Road Icon" width = "1700" height = "725">
+        <img class = "dirt-road-top" src = "icons/DirtRoad.png" alt = "Dirt Road Top Icon" width = "2000" height = "250">
+        <img class = "car" src = "icons/car.png" alt = "Car Icon" width = "625" height = "625">
+        <img class = "menu-bar" src = "icons/MenuBar.png" alt = "Menu Bar Icon" width = "750" height = "700">
+        <img class = "cloud-left" src = "icons/Cloud.png" alt = "Cloud Icon" width = "600" height = "600">
+        <img class = "tree-stump" src = "icons/TreeStump.png" alt = "Tree Stump Icon" width = "400" height = "400">
+        <img class = "cactus" src = "icons/Cactus.png" alt = "Cactus Icon" width = "600" height = "600">
 
-        <!-- Positions the road signs image behind the text -->
-        <div class = "roadsigns">
-            <center><img src = "icons/RoadSigns.png" alt = "Road Signs Icon" width = "1200" height = "1200"></center>
-            <h3 class = "first-txt">Hi there! Thank you for using RoadTrip. Select a state and receive information about its</h3></center>
-            <h3 class = "second-txt">Road Rules</h3>
-            <h3 class = "third-txt">Fun Facts</h3>
-            <h3 class = "fourth-txt">Famous Landmarks</h3>
-            <h3 class = "fifth-txt">Happy Travels! :)</h3>
-        </div>
+        <h1>Pick A State!</h1>    
 
         <footer>
             RoadTrip Project Created By: Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
         </footer>
     
     </body>
+
 </html>
