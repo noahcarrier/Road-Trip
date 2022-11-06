@@ -1,0 +1,48 @@
+@font-face { 
+    font-family: noot; 
+    src: url(fonts/Noot.otf);
+}
+
+@font-face {
+    font-family: norwester; 
+    src: url(fonts/norwester.otf); 
+   
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    color: black;
+    background: rgb(186, 186, 186);
+    font-family: norwester;
+}
+
+h1 {
+    font-family: noot;
+    font-size: 160px; 
+    color: #155ac1;
+    position: absolute; 
+    top: 10px; 
+    left: 400px; 
+}
+
+h3 {
+    font-family: norwester; 
+    font-size: 45px;
+    color: white;
+    position: absolute; 
+    top: 295px; 
+    left: 320px; 
+}
+
+h4 {
+    font-family: norwester; 
+    font-size: 40px; 
+    color: #98e0e5; 
+    position: absolute; 
+    top: 8px; 
+    left: 70px; 
+}
