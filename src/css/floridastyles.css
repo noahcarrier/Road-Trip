@@ -24,12 +24,10 @@ h1 {
     font-family: noot;
     font-size: 100px; 
     color: black;
-    position: absolute; 
-    top: -25px; 
-    left: 560px; 
 }
 
-h3 {
+h2 {
     font-family: norwester; 
-    font-size: 25px;
+    font-size: 45px; 
+    color: black; 
 }
