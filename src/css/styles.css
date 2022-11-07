@@ -63,3 +63,18 @@ input[type=text] {
     left: 465px;
     position: relative; 
 }
+
+input[type=password] {
+    font-family: norwester; 
+    font-size: 35px; 
+    width: 30%; 
+    padding: 12px 20px; 
+    margin: 20px; 
+    background-color: white;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    border: 1px solid white; 
+    top: 330px; 
+    left: 465px;
+    position: relative; 
+}
