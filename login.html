@@ -1,27 +1,54 @@
 <!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>RoadTrip Login</title>
-		<link rel="stylesheet" href="src/css/styles.css" />
 		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 		<script src="src/scripts/initialize.js"></script>
 		<!-- <script defer src="src/scripts/script.js"></script> -->
+		<title>RoadTrip Login</title>
+		<link rel="stylesheet" href="src/css/styles.css">
+
+		<style>
+			.login-road-left {
+				transform: rotate(300deg);
+				top: -20px; 
+				left: -30px; 
+				position: absolute; 
+			}
+
+			.login-road-right {
+				transform: rotate(140deg); 
+				top: 300px; 
+				left: 950px; 
+				position: absolute; 
+			}
+
+			.login-car {
+				top: 120px; 
+				left: 550px; 
+				position: absolute; 
+			}
+		</style>
 	</head>
 	<body style="background-color: #98e0e5">
 		<h1>Login</h1>
 
 		<section>
-			<div style="margin-bottom: 10px">
+			<div>
 				<input id="url" type="text" placeholder="Username" />
 			</div>
-			<div style="margin-bottom: 10px">
+
+			<div>
 				<input id="url" type="text" placeholder="Password" />
 			</div>
+
 			<button>Log In</button>
 		</section>
+
+		<img class = "login-road-left" src = "icons/LoginRoad.png" alt = "Login Road Icon" width = "500" height = "500">
+		<img class = "login-road-right" src = "icons/LoginRoad.png" alt = "Login Road Icon" width = "500" height = "500">
+		<img class = "login-car" src = "icons/LoginCar.png" alt = "Login Car Icon" width = "300" height = "300">
 
 		<footer>
 			RoadTrip Project Created By: Anna Macinnis, Daisy Nguyen, Dynie

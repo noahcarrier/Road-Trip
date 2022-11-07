@@ -26,10 +26,40 @@ h1 {
     color: black;
     position: absolute; 
     top: -25px; 
-    left: 560px; 
+    left: 580px; 
 }
 
 h3 {
     font-family: norwester; 
     font-size: 25px;
+}
+
+button {
+    font-family: norwester;
+    font-size: 30px;
+    color: white; 
+    padding: 10px 20px;
+    top: 600px; 
+    left: 637px; 
+    position: absolute; 
+    background-color: #155ac1;
+    border-radius: 12px; 
+    border: 1px solid #155ac1; 
+    cursor: pointer; 
+    transition-duration: 0.4s; 
+}
+
+input[type=text] {
+    font-family: norwester;
+    font-size: 35px; 
+    width: 30%; 
+    padding: 12px 20px; 
+    margin: 20px; 
+    background-color: white;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    border: 1px solid white; 
+    top: 330px; 
+    left: 465px;
+    position: relative; 
 }
