@@ -22,7 +22,11 @@ footer {
 
 h1 {
     font-family: noot;
-    font-size: 70px; 
+    font-size: 100px; 
+    color: black;
+    position: absolute; 
+    top: -25px; 
+    left: 560px; 
 }
 
 h3 {

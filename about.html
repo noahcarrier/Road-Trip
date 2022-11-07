@@ -9,40 +9,39 @@
 
         <!-- Sets up positioning of road signs image and text -->
         <style>
-            .roadsigns {
-                margin: 1%; 
-                top: -350px; 
-                left: -15px;
-                position: relative;
+            .road-signs {
+                top: -160px; 
+                left: 100px;
+                position: absolute;
             }
 
             .first-txt {
                 position: absolute; 
-                top: 400px; 
-                left: 300px;
+                top: 230px; 
+                left: 310px;
             }
 
             .second-txt {
                 position: absolute; 
-                top: 500px; 
-                left: 650px; 
+                top: 340px; 
+                left: 660px; 
             }
 
             .third-txt {
                 position: absolute; 
-                top: 600px; 
-                left: 655px; 
+                top: 410px; 
+                left: 665px; 
             }
 
             .fourth-txt {
                 position: absolute; 
-                top: 700px; 
-                left: 610px; 
+                top: 480px; 
+                left: 620px; 
             }
             .fifth-txt {
                 position: absolute; 
-                top: 800px; 
-                left: 625px; 
+                top: 620px; 
+                left: 635px; 
             }
         </style>
 
@@ -50,17 +49,15 @@
 
     <body style = "background-color: #98e0e5">
 
-        <h1><center>ABOUT</center></h1>
+        <h1>ABOUT</h1>
 
         <!-- Positions the road signs image behind the text -->
-        <div class = "roadsigns">
-            <center><img src = "icons/RoadSigns.png" alt = "Road Signs Icon" width = "1200" height = "1200"></center>
-            <h3 class = "first-txt">Hi there! Thank you for using RoadTrip. Select a state and receive information about its</h3></center>
-            <h3 class = "second-txt">Road Rules</h3>
-            <h3 class = "third-txt">Fun Facts</h3>
-            <h3 class = "fourth-txt">Famous Landmarks</h3>
-            <h3 class = "fifth-txt">Happy Travels! :)</h3>
-        </div>
+        <img class = "road-signs" src = "icons/RoadSigns.png" alt = "Road Signs Icon" width = "1200" height = "1200">
+        <h3 class = "first-txt">Hi there! Thank you for using RoadTrip. Select a state and receive information about its</h3>
+        <h3 class = "second-txt">Road Rules</h3>
+        <h3 class = "third-txt">Fun Facts</h3>
+        <h3 class = "fourth-txt">Famous Landmarks</h3>
+        <h3 class = "fifth-txt">Happy Travels! :)</h3>
 
         <footer>
             RoadTrip Project Created By: Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
