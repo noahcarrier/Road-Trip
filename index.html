@@ -1,36 +1,36 @@
+<!-- Home Page -->
+<!-- Allows the user to navigate to other pages on the website -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
     <head>
-        <title>RoadTrip Login</title>
-        <link rel="stylesheet" href="src/css/styles.css">
-        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
-        <script src="src/scripts/initialize.js"></script> 
-        <script defer src="src/scripts/signin.js"></script>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>RoadTrip Home</title>
+        <link rel = "stylesheet" href = "src/css/styles.css">
     </head>
     <body style = "background-color: #98e0e5">
-        
-        <h1>Login</h1>
-        
-        <section>            
-            <div style = "margin-bottom: 10px;">
-                <input id="url_user" type="text" placeholder="Username">
+        <!-- Home Menu Button -->
+        <div class = "dropdown">
+            <button class = "drop-button">MENU</button>
+            <div class = "dropdown-content">
+                <a href = "about.html">About</a>
+                <a href = "pickastate.html">Pick A State!</a>
+                <a href = "login.html">Login</a>
             </div>
-            <div style = "margin-bottom: 10px;">
-                <input id="url_pass" type="password" placeholder="Password">
-            </div>
-            <button id="login_btn">
-                Log In
-            </button>
-        </section>
-
-        <div>
-            <a href ="register.html">
-                Don't have an account?
-            </a>
         </div>
 
+        <!-- Images -->
+        <img class = "mountains" src = "icons/Mountains.png" alt = "Mountains Icon" width = "1250" height = "1250">
+        <img class = "canyon" src = "icons/Canyon.png" alt = "Canyon Icon" width = "850" height = "900">
+        <img class = "left-red-star" src = "icons/Star.png" alt = "Star Icon" width = "250" height = "250">
+        <img class = "right-red-star" src = "icons/Star.png" alt = "Star Icon" width = "250" height = "250">
+        <img class = "van" src = "icons/Van.png" alt = "Van Icon" width = "875" height = "875">
+        <img class = "capitol" src = "icons/Capitol.png" alt = "Capitol Icon" width = "700" height = "700">
+        <img class = "statue-of-liberty" src = "icons/StatueOfLiberty.png" alt = "Statue Of Liberty Icon" width = "750" height = "750">
 
+        <h1>RoadTrip</h1>
+        <h3>The Ultimate Travel Guide Across The USA!</h3>
 
         <footer>
             RoadTrip Project Created By: Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
