@@ -43,7 +43,7 @@ h3 {
     font-size: 25px;
 }
 
-button {
+#login_btn {
     font-family: norwester;
     font-size: 30px;
     color: white; 
@@ -56,6 +56,21 @@ button {
     border: 1px solid #155ac1; 
     cursor: pointer; 
     transition-duration: 0.4s; 
+}
+
+#signup_btn {
+    font-family: norwester;
+    font-size: 30px;
+    color: #155ac1; 
+    padding: 10px 20px;
+    top: 600px; 
+    left: 450px; 
+    position: absolute; 
+    background: none;
+    border: none; 
+    cursor: pointer; 
+    transition-duration: 0.4s; 
+    margin-top: 100px;
 }
 
 input[type=text] {
