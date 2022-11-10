@@ -31,27 +31,49 @@ footer {
 
 h1 {
     font-family: noot;
-    font-size: 160px; 
-    color: #155ac1;
+    font-size: 100px; 
+    color: black;
     position: absolute; 
-    top: 10px; 
-    left: 400px; 
+    top: -25px; 
+    left: 580px; 
 }
 
 h3 {
     font-family: norwester; 
-    font-size: 45px;
-    color: white;
-    position: absolute; 
-    top: 295px; 
-    left: 320px; 
+    font-size: 25px;
 }
 
-h4 {
-    font-family: norwester; 
-    font-size: 40px; 
-    color: #98e0e5; 
+.road-signs {
+    top: -160px; 
+    left: 100px;
+    position: absolute;
+}
+
+.first-txt {
     position: absolute; 
-    top: 8px; 
-    left: 70px; 
+    top: 230px; 
+    left: 250px;
+}
+
+.second-txt {
+    position: absolute; 
+    top: 340px; 
+    left: 655px; 
+}
+
+.third-txt {
+    position: absolute; 
+    top: 410px; 
+    left: 660px; 
+}
+
+.fourth-txt {
+    position: absolute; 
+    top: 480px; 
+    left: 615px; 
+}
+.fifth-txt {
+    position: absolute; 
+    top: 620px; 
+    left: 630px; 
 }

@@ -1,3 +1,4 @@
+/* For the Home Page (index.html) */
 @font-face {
     font-family: noot;
     src: url(fonts/noot.otf);
@@ -31,59 +32,117 @@ footer {
 
 h1 {
     font-family: noot;
-    font-size: 100px; 
-    color: black;
+    font-size: 160px; 
+    color: #155ac1;
     position: absolute; 
-    top: -25px; 
-    left: 580px; 
+    top: 10px; 
+    left: 400px; 
 }
 
 h3 {
     font-family: norwester; 
-    font-size: 25px;
-}
-
-button {
-    font-family: norwester;
-    font-size: 30px;
-    color: white; 
-    padding: 10px 20px;
-    top: 600px; 
-    left: 637px; 
+    font-size: 45px;
+    color: white;
     position: absolute; 
-    background-color: #155ac1;
-    border-radius: 12px; 
-    border: 1px solid #155ac1; 
-    cursor: pointer; 
-    transition-duration: 0.4s; 
+    top: 295px; 
+    left: 320px; 
 }
 
-input[type=text] {
-    font-family: norwester;
-    font-size: 35px; 
-    width: 30%; 
-    padding: 12px 20px; 
-    margin: 20px; 
-    background-color: white;
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    border: 1px solid white; 
-    top: 330px; 
-    left: 465px;
-    position: relative; 
+.canyon {
+    top: 199px; 
+    left: -190px; 
+    position: absolute; 
 }
 
-input[type=password] {
+.left-red-star {
+    top: 85px; 
+    left: 220px; 
+    position: absolute; 
+}
+
+.right-red-star {
+    top: 85px; 
+    left: 987px; 
+    position: absolute; 
+}
+
+.mountains {
+    top: 14px; 
+    left: 100px; 
+    position: absolute;  
+}
+
+.van {
+    top: 265px; 
+    left: 30px; 
+    position: absolute; 
+}
+
+.capitol {
+    top: 286px; 
+    left: 770px; 
+    position: absolute; 
+}
+
+.statue-of-liberty {
+    top: 176px; 
+    left: 975px; 
+    position: absolute; 
+}
+
+/* Positions the dropdown content of the home menu button */
+.dropdown {
+    top: 20px; 
+    left: 20px; 
+    position: relative;  
+}
+
+/* Formats the home menu button */
+.drop-button {
     font-family: norwester; 
-    font-size: 35px; 
-    width: 30%; 
-    padding: 12px 20px; 
-    margin: 20px; 
-    background-color: white;
-    border-radius: 4px; 
-    box-sizing: border-box; 
+    font-size: 40px; 
+    background-color: white; 
+    color: #98e0e5;
+    top: 5px; 
+    left: 5px;  
+    padding: 10px 20px; 
+    position: absolute; 
     border: 1px solid white; 
-    top: 330px; 
-    left: 465px;
-    position: relative; 
+    border-radius: 12px; 
+    cursor: pointer; 
+}
+
+/* Formats the content inside of the home menu button */
+.dropdown-content {
+    font-family: norwester; 
+    font-size: 25px; 
+    display: none; 
+    position: absolute; 
+    background-color: white; 
+    min-width: 200px; 
+    z-index: 2; 
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,.5); 
+}
+
+.dropdown-content a {
+    display: block; 
+    color: black; 
+    padding: 12px 16px; 
+}
+
+/* Changes the color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: white;
+    color: #155ac1; 
+}
+
+/* Shows the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Changes the background color of the dropdown button when the 
+dropdown content is shown */
+.dropdown:hover .drop-button {
+    background-color: #155ac1;
 }

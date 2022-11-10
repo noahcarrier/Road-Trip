@@ -37,3 +37,69 @@ h1 {
     top: -5px; 
     left: 430px; 
 }
+
+.dirt-road-bottom {
+    top: 415px; 
+    left: -150px; 
+    position: absolute; 
+}
+
+.dirt-road-top {
+    top: 480px; 
+    left: -150px;
+    position: absolute
+}
+
+.road {
+    top: 295px; 
+    left: -125px; 
+    position: absolute; 
+}
+
+.car {
+    top: 275px; 
+    left: -70px; 
+    position: absolute; 
+}
+
+.menu-bar {
+    top: -40px; 
+    left: 350px; 
+    position: absolute; 
+}
+
+.cloud-left {
+    top: -200px; 
+    left: -130px; 
+    position: absolute; 
+}
+
+.tree-stump {
+    top: 360px; 
+    left: 1145px; 
+    position: absolute; 
+}
+
+.cactus {
+    top: 180px; 
+    left: 930px; 
+    position: absolute; 
+}
+
+.bush {
+    top: 340px; 
+    left: 825px; 
+    position: absolute; 
+}
+
+.cloud-right {
+    top: -110px; 
+    left: 975px; 
+    position: absolute; 
+}
+
+.arrow-button {
+    top: 225px; 
+    left: 450px; 
+    position: absolute; 
+}
