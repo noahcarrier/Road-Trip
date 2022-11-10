@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RoadTrip Register</title>
+        <link rel="stylesheet" href="src/css/styles.css">
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+        <script src="src/scripts/initialize.js"></script> 
+        <script defer src="src/scripts/register.js"></script>
+    </head>
+    <body>
+        <h1>
+            Registration
+        </h1>
+
+        <section>            
+            <div style = "margin-bottom: 10px;">
+                <input id="url_user" type="text" placeholder="Username">
+            </div>
+            <div style = "margin-bottom: 10px;">
+                <input id="url_pass" type="password" placeholder="Password">
+            </div>
+            <button id="signup_btn">
+                Sign Up
+            </button> <br>
+            <button id="login_return">
+                Back to Log In
+            </button>
+        </section>
+
+    </body>
+</html>
