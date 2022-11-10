@@ -62,11 +62,11 @@ h1 {
     position: absolute; 
 }
 
-.menu-bar {
+/*.menu-bar {
     top: -40px; 
     left: 350px; 
     position: absolute; 
-}
+}*/
 
 .cloud-left {
     top: -200px; 
@@ -98,8 +98,8 @@ h1 {
     position: absolute; 
 }
 
-.arrow-button {
+/*.arrow-button {
     top: 225px; 
     left: 450px; 
     position: absolute; 
-}
+}*/
