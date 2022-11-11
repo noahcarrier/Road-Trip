@@ -1,0 +1,119 @@
+@font-face {
+    font-family: noot;
+    src: url(fonts/noot.otf);
+    src: url(fonts/noot.eot); 
+    src: url(fonts/noot.woff2); 
+    src: url(fonts/noot.woff); 
+    src: url(fonts/noot.ttf); 
+    src: url(fonts/noot.svg);
+}
+
+@font-face {
+    font-family: norwester;
+    src: url(fonts/norwester.otf); 
+    src: url(fonts/norwester.eot); 
+    src: url(fonts/norwester.woff2); 
+    src: url(fonts/norwester.woff); 
+    src: url(fonts/norwester.ttf); 
+    src: url(fonts/norwester.svg); 
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    color: black;
+    background: rgb(186, 186, 186);
+    font-family: norwester;
+}
+
+h1 {
+    font-family: noot;
+    font-size: 100px; 
+    color: black;
+    position: absolute; 
+    top: -25px; 
+    left: 520px; 
+}
+
+#signup_btn {
+    font-family: norwester;
+    font-size: 30px;
+    color: white; 
+    background-color: #155ac1; 
+    padding: 10px 20px;
+    top: 600px; 
+    left: 630px; 
+    position: absolute; 
+    border-radius: 12px; 
+    border: 1px solid #155ac1; 
+    cursor: pointer; 
+    transition-duration: 0.4s; 
+}
+
+#login_return {
+    font-family: norwester;
+    font-size: 30px;
+    color: white; 
+    background-color: #155ac1; 
+    padding: 10px 20px;
+    top: 690px; 
+    left: 587px; 
+    position: absolute; 
+    border-radius: 12px; 
+    border: 1px solid #155ac1; 
+    cursor: pointer; 
+    transition-duration: 0.4s; 
+}
+
+input[type=text] {
+    font-family: norwester;
+    font-size: 35px; 
+    width: 30%; 
+    padding: 12px 20px; 
+    margin: 20px; 
+    background-color: white;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    border: 1px solid white; 
+    top: 330px; 
+    left: 465px;
+    position: relative; 
+}
+
+input[type=password] {
+    font-family: norwester; 
+    font-size: 35px; 
+    width: 30%; 
+    padding: 12px 20px; 
+    margin: 20px; 
+    background-color: white;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    border: 1px solid white; 
+    top: 320px; 
+    left: 465px;
+    position: relative; 
+}
+
+.login-road-left {
+    transform: rotate(55deg);
+    top: -200px; 
+    left: -200px; 
+    position: absolute; 
+}
+
+.login-road-right {
+    transform: rotate(210deg); 
+    top: 175px; 
+    left: 850px; 
+    position: absolute; 
+}
+
+.login-car {
+    top: 120px; 
+    left: 550px; 
+    position: absolute; 
+}

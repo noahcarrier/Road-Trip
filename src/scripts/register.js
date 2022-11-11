@@ -33,7 +33,7 @@ signup_btn.addEventListener("click", function(e){
 
 // sends user back to login page on click
 login_return.addEventListener("click", function(e){
-    window.location.replace("index.html");
+    window.location.replace("login.html");
 });
 
 
