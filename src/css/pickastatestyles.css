@@ -1,22 +1,13 @@
 @font-face {
     font-family: noot;
-    src: url(fonts/noot.otf);
-    src: url(fonts/noot.eot); 
-    src: url(fonts/noot.woff2); 
-    src: url(fonts/noot.woff); 
-    src: url(fonts/noot.ttf); 
-    src: url(fonts/noot.svg);
+    src: url(/fonts/noot.ttf); 
 }
 
 @font-face {
     font-family: norwester;
-    src: url(fonts/norwester.otf); 
-    src: url(fonts/norwester.eot); 
-    src: url(fonts/norwester.woff2); 
-    src: url(fonts/norwester.woff); 
-    src: url(fonts/norwester.ttf); 
-    src: url(fonts/norwester.svg); 
+    src: url(/fonts/norwester.ttf); 
 }
+
 
 footer {
     position: fixed;
@@ -47,7 +38,7 @@ h1 {
 .dirt-road-top {
     top: 480px; 
     left: -150px;
-    position: absolute
+    position: absolute;
 }
 
 .road {
@@ -70,8 +61,12 @@ h1 {
 
 .cloud-left {
     top: -200px; 
-    left: -130px; 
-    position: absolute; 
+    left: -120px; 
+    position: relative;
+    animation-name: float;
+   animation-duration: 2s;
+   animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 .tree-stump {
@@ -93,10 +88,35 @@ h1 {
 }
 
 .cloud-right {
-    top: -110px; 
-    left: 975px; 
-    position: absolute; 
+    top: -130px; 
+    left: 250px; 
+    position: relative;
+     animation-name: float2;
+   animation-duration: 2s;
+   animation-direction: alternate;
+    animation-iteration-count: infinite;
+
 }
+@keyframes float {
+   0% { left: -130px; }
+   15% {left: -120px; }
+   20% {left: -110px; }
+   25% {left: -90px; }
+   50% {left: -80px; }
+   60% {left: -70px; }
+   70% {left: -60px; }
+   100% {left: -50px; }
+}
+  @keyframes float2 {
+   0% { left: 250px; }
+   15% {left: 240px; }
+   20% {left: 230px; }
+   25% {left: 220px; }
+   50% {left: 210px; }
+   60% {left: 200px; }
+   70% {left: 190px; }
+   100% {left: 180px; }
+}  
 
 /*.arrow-button {
     top: 225px; 

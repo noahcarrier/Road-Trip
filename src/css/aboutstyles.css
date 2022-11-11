@@ -1,21 +1,11 @@
 @font-face {
     font-family: noot;
-    src: url(fonts/noot.otf);
-    src: url(fonts/noot.eot); 
-    src: url(fonts/noot.woff2); 
-    src: url(fonts/noot.woff); 
-    src: url(fonts/noot.ttf); 
-    src: url(fonts/noot.svg);
+    src: url(/fonts/noot.ttf); 
 }
 
 @font-face {
     font-family: norwester;
-    src: url(fonts/norwester.otf); 
-    src: url(fonts/norwester.eot); 
-    src: url(fonts/norwester.woff2); 
-    src: url(fonts/norwester.woff); 
-    src: url(fonts/norwester.ttf); 
-    src: url(fonts/norwester.svg); 
+    src: url(/fonts/norwester.ttf); 
 }
 
 footer {
@@ -40,7 +30,7 @@ h1 {
 
 h3 {
     font-family: norwester; 
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .road-signs {
@@ -77,3 +67,17 @@ h3 {
     top: 620px; 
     left: 630px; 
 }
+.next p {
+    font-family: norwester; 
+    font-size: 40px; 
+    background-color: white; 
+    color: #98e0e5;
+    bottom: 60px; 
+    right: 60px;  
+    padding: 10px 20px; 
+    position: absolute; 
+    border: 1px solid white; 
+    border-radius: 12px; 
+    cursor: pointer; 
+}
+
