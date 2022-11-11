@@ -70,30 +70,29 @@ h3 {
 
 #goback_btn {
     font-family: norwester;
-    font-size: 35px;
-    color: #98e0e5; 
-    background-color: white; 
+    font-size: 30px;
+    color: white; 
+    background-color: #155ac1; 
     padding: 10px 20px;
-    top: 640px; 
-    left: 240px; 
+    top: 30px; 
+    left: 30px; 
     position: absolute; 
     border-radius: 12px; 
-    border: 1px solid white; 
+    border: 1px solid #155ac1; 
     cursor: pointer; 
     transition-duration: 0.4s; 
 }
-
 .next p {
     font-family: norwester; 
-    font-size: 35px; 
+    font-size: 40px; 
     background-color: white; 
     color: #98e0e5;
-    bottom: 80px; 
-    right: 220px;  
+    bottom: 60px; 
+    right: 60px;  
     padding: 10px 20px; 
     position: absolute; 
     border: 1px solid white; 
     border-radius: 12px; 
     cursor: pointer; 
-    transition-duration: 0.4s; 
 }
+
