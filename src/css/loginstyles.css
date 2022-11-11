@@ -104,16 +104,16 @@ input[type=password] {
 }
 
 .login-road-left {
-    transform: rotate(300deg);
-    top: -20px; 
-    left: -30px; 
+    transform: rotate(55deg);
+    top: -200px; 
+    left: -200px; 
     position: absolute; 
 }
 
 .login-road-right {
-    transform: rotate(140deg); 
-    top: 300px; 
-    left: 950px; 
+    transform: rotate(210deg); 
+    top: 175px; 
+    left: 850px; 
     position: absolute; 
 }
 
