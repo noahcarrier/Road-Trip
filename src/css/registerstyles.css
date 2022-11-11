@@ -1,11 +1,21 @@
 @font-face {
     font-family: noot;
-    src: url(/fonts/noot.ttf); 
+    src: url(fonts/noot.otf);
+    src: url(fonts/noot.eot); 
+    src: url(fonts/noot.woff2); 
+    src: url(fonts/noot.woff); 
+    src: url(fonts/noot.ttf); 
+    src: url(fonts/noot.svg);
 }
 
 @font-face {
     font-family: norwester;
-    src: url(/fonts/norwester.ttf); 
+    src: url(fonts/norwester.otf); 
+    src: url(fonts/norwester.eot); 
+    src: url(fonts/norwester.woff2); 
+    src: url(fonts/norwester.woff); 
+    src: url(fonts/norwester.ttf); 
+    src: url(fonts/norwester.svg); 
 }
 
 footer {
@@ -25,43 +35,37 @@ h1 {
     color: black;
     position: absolute; 
     top: -25px; 
-    left: 580px; 
+    left: 520px; 
 }
 
-h3 {
-    font-family: norwester; 
-    font-size: 25px;
-}
-
-#login_btn p{
+#signup_btn {
     font-family: norwester;
     font-size: 30px;
     color: white; 
+    background-color: #155ac1; 
     padding: 10px 20px;
     top: 600px; 
-    left: 637px; 
+    left: 630px; 
     position: absolute; 
-    background-color: #155ac1;
     border-radius: 12px; 
     border: 1px solid #155ac1; 
     cursor: pointer; 
     transition-duration: 0.4s; 
 }
 
-
-#signup_btn {
+#login_return {
     font-family: norwester;
     font-size: 30px;
-    color: #155ac1; 
+    color: white; 
+    background-color: #155ac1; 
     padding: 10px 20px;
-    top: 600px; 
-    left: 450px; 
+    top: 690px; 
+    left: 587px; 
     position: absolute; 
-    background: none;
-    border: none; 
+    border-radius: 12px; 
+    border: 1px solid #155ac1; 
     cursor: pointer; 
     transition-duration: 0.4s; 
-    margin-top: 100px;
 }
 
 input[type=text] {
@@ -89,7 +93,7 @@ input[type=password] {
     border-radius: 4px; 
     box-sizing: border-box; 
     border: 1px solid white; 
-    top: 330px; 
+    top: 320px; 
     left: 465px;
     position: relative; 
 }
@@ -113,4 +117,3 @@ input[type=password] {
     left: 550px; 
     position: absolute; 
 }
-
