@@ -71,14 +71,14 @@ h3 {
 #goback_btn {
     font-family: norwester;
     font-size: 30px;
-    color: white; 
-    background-color: #155ac1; 
+    color: #98e0e5; 
+    background-color: white; 
     padding: 10px 20px;
-    top: 30px; 
-    left: 30px; 
+    top: 648px; 
+    left: 250px; 
     position: absolute; 
     border-radius: 12px; 
-    border: 1px solid #155ac1; 
+    border: 1px solid white; 
     cursor: pointer; 
     transition-duration: 0.4s; 
 }
