@@ -41,25 +41,25 @@ h3 {
 
 .first-txt {
     position: absolute; 
-    top: 230px; 
+    top: 210px; 
     left: 250px;
 }
 
 .second-txt {
     position: absolute; 
-    top: 340px; 
+    top: 300px; 
     left: 655px; 
 }
 
 .third-txt {
     position: absolute; 
-    top: 410px; 
+    top: 390px; 
     left: 660px; 
 }
 
 .fourth-txt {
     position: absolute; 
-    top: 480px; 
+    top: 500px; 
     left: 615px; 
 }
 .fifth-txt {
@@ -70,18 +70,19 @@ h3 {
 
 #goback_btn {
     font-family: norwester;
-    font-size: 30px;
-    color: white; 
-    background-color: #155ac1; 
+    font-size: 35px;
+    color: #98e0e5; 
+    background-color: white; 
     padding: 10px 20px;
-    top: 30px; 
-    left: 30px; 
+    top: 640px; 
+    left: 240px; 
     position: absolute; 
     border-radius: 12px; 
-    border: 1px solid #155ac1; 
+    border: 1px solid white; 
     cursor: pointer; 
     transition-duration: 0.4s; 
 }
+
 .next p {
     font-family: norwester; 
     font-size: 40px; 
@@ -94,5 +95,5 @@ h3 {
     border: 1px solid #155ac1; 
     border-radius: 12px; 
     cursor: pointer; 
+    transition-duration: 0.4s; 
 }
-
