@@ -85,14 +85,14 @@ h3 {
 
 .next p {
     font-family: norwester; 
-    font-size: 40px; 
-    background-color:#155ac1; 
-    color: white;
-    bottom: 60px; 
-    right: 60px;  
+    font-size: 35px; 
+    background-color:white; 
+    color: #98e0e5;
+       top: 610px; 
+    right: 280px;  
     padding: 10px 20px; 
     position: absolute; 
-    border: 1px solid #155ac1; 
+    border: 1px solid #white; 
     border-radius: 12px; 
     cursor: pointer; 
     transition-duration: 0.4s; 
