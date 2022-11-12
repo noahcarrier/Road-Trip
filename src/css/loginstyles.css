@@ -38,7 +38,7 @@ h3 {
     font-size: 30px;
     color: white; 
     padding: 10px 20px;
-    top: 600px; 
+    top: 550px; 
     left: 637px; 
     position: absolute; 
     background-color: #155ac1;
@@ -54,7 +54,7 @@ h3 {
     font-size: 30px;
     color: #155ac1; 
     padding: 10px 20px;
-    top: 600px; 
+    top: 550px; 
     left: 450px; 
     position: absolute; 
     background: none;
@@ -64,7 +64,7 @@ h3 {
     margin-top: 100px;
 }
 
-input[type=text] {
+input[type=user] {
     font-family: norwester;
     font-size: 35px; 
     width: 30%; 
@@ -74,7 +74,7 @@ input[type=text] {
     border-radius: 4px; 
     box-sizing: border-box; 
     border: 1px solid white; 
-    top: 330px; 
+    top: 320px; 
     left: 465px;
     position: relative; 
 }

@@ -36,7 +36,7 @@ h1 {
     color: white; 
     background-color: #155ac1; 
     padding: 10px 20px;
-    top: 600px; 
+    top: 550px; 
     left: 630px; 
     position: absolute; 
     border-radius: 12px; 
@@ -51,7 +51,7 @@ h1 {
     color: white; 
     background-color: #155ac1; 
     padding: 10px 20px;
-    top: 690px; 
+    top: 630px; 
     left: 587px; 
     position: absolute; 
     border-radius: 12px; 
@@ -60,7 +60,7 @@ h1 {
     transition-duration: 0.4s; 
 }
 
-input[type=text] {
+input[type=user] {
     font-family: norwester;
     font-size: 35px; 
     width: 30%; 
@@ -85,8 +85,8 @@ input[type=password] {
     border-radius: 4px; 
     box-sizing: border-box; 
     border: 1px solid white; 
-    top: 320px; 
-    left: 465px;
+    top: 310px; 
+    left: 466px;
     position: relative; 
 }
 
