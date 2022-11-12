@@ -1,21 +1,13 @@
 @font-face {
     font-family: noot;
-    src: url(fonts/noot.otf);
-    src: url(fonts/noot.eot); 
-    src: url(fonts/noot.woff2); 
-    src: url(fonts/noot.woff); 
-    src: url(fonts/noot.ttf); 
-    src: url(fonts/noot.svg);
+    src: url(/fonts/noot.ttf); 
+ 
 }
 
 @font-face {
     font-family: norwester;
-    src: url(fonts/norwester.otf); 
-    src: url(fonts/norwester.eot); 
-    src: url(fonts/norwester.woff2); 
-    src: url(fonts/norwester.woff); 
-    src: url(fonts/norwester.ttf); 
-    src: url(fonts/norwester.svg); 
+    src: url(/fonts/norwester.ttf); 
+ 
 }
 
 footer {
