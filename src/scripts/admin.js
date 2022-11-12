@@ -1,49 +1,84 @@
-/*
-    for some reason, this script is not recognizing any of the variables properly--
-    it's acting like i've used the wrong id name or something to that length.
-    i was using the register.js script as a sort of template to get started since that section works properly.
-*/
+// variables for html elements
+const adminStateDd = document.querySelector("#adminStateDd");
+const adminDataField = document.querySelector("#adminDataField");
+const adminContBtn = document.querySelector("#adminContBtn");
+const adminNameEntry = document.querySelector("#adminNameEntry");
+const adminDescEntry = document.querySelector("#adminDescEntry");
+const adminSubmit = document.querySelector("#adminSubmit");
+// variables for div containers
+const adminNameDiv = document.querySelector("#adminNameDiv");
+const adminDescDiv = document.querySelector("#adminDescDiv");
 
-// variables
-const state = document.querySelector("#state_select");
-const adminSbt = document.querySelector("#admin_submit");
+
+// hiding the data entry fields initially
+fieldToggle(adminNameDiv);
+fieldToggle(adminDescDiv);
+fieldToggle(adminSubmit);
 
 // reference database
 const db = firebase.database();
 
-// debugging: (this is printing an empty string for some reason)
-console.log(state.value);
+// toggles a field to be shown or hidden
+function fieldToggle(field) {
+    if(field.style.display === "none") {
+        field.style.display = "block";
+    } else {
+        field.style.display = "none";
+    }
+}
 
-// simple function to test if the addEventListener is working - it is not :(
-adminSbt.addEventListener("click", function(e){
-    console.log("Admin submit clicked");
+// when continue is clicked, display appropriate entry fields
+adminContBtn.addEventListener("click", function(e){
+    if(adminDataField.value == "dbLandmark") {
+        fieldToggle(adminNameDiv);
+    }
+    fieldToggle(adminDescDiv);
+    fieldToggle(adminSubmit);
 });
 
-// redirect buttons
-const aboutReturnAdmin = document.querySelector("#aboutpage");
-const indexReturnAdmin = document.querySelector("#indexpage");
-const loginReturnAdmin = document.querySelector("#loginpage");
-const pickastateReturnAdmin = document.querySelector("#pickastatepage");
-const registerReturnAdmin = document.querySelector("#registerpage");
+// Updates the landmark for the state
+function updateLandmark(dirId, lmName, lmDesc){
+    console.log("updating " + dirId + " landmark to " + lmName);
+    var update = {};
+    update['state-info/' + dirId + '/landmark/name'] = lmName;
+    update['state-info/' + dirId + '/landmark/description'] = lmDesc;
 
-// none of these are working either, i think they are null for some reason
-aboutReturnAdmin.addEventListener("click", function(e){
-    window.location.replace("about.html");
+    return firebase.database().ref().update(update);
+}
+
+// updates the laws for the state
+function updateLaws(dirId, desc) {
+    console.log("adding for " + dirId + " new law: " + desc);
+    let lawCount = 1;
+    let i = 1;
+    let data;
+    // loop finds appropriate database directory to add law description
+    for(i = 1; i != 0; i++) {
+        // get the data contained at law directory i
+        var currentLaw = firebase.database().ref('state-info/' + dirId + '/laws/law' + i);
+        currentLaw.on('value', (snapshot) => {
+            data = snapshot.val();
+            console.log(data);
+        });
+
+        // if the data is empty, i represents the directory number to add description
+        if(data == "" || data == null) {
+            lawCount = i;
+            i = -1; // this breaks out of loop
+        }
+    }
+    // lawCount now represents the correct directory to insert description
+    firebase.database().ref('state-info/' + dirId + '/laws/law' + lawCount).set({
+        description: desc,
+    });
+}
+
+// updates appropriate data in database when submit is clicked
+adminSubmit.addEventListener("click", function(e){
+    console.log("you want to update " + adminDataField.value);
+    if(adminDataField.value == "dbLandmark") {
+        updateLandmark(adminStateDd.value, adminNameEntry.value, adminDescEntry.value);
+    } else if(adminDataField.value == "dbLaws") {
+        updateLaws(adminStateDd.value, adminDescEntry.value);
+    }
 });
-
-indexReturnAdmin.addEventListener("click", function(e){
-    window.location.replace("index.html");
-});
-
-loginReturnAdmin.addEventListener("click", function(e){
-    window.location.replace("login.html");
-});
-
-pickastateReturnAdmin.addEventListener("click", function(e){
-    window.location.replace("pickastate.html");
-});
-
-registerReturnAdmin.addEventListener("click", function(e){
-    window.location.replace("register.html");
-});
-
