@@ -54,7 +54,15 @@ button {
     transform:translateX(196px);
 }
 #finishTrip_btn {
-    margin-top: 100px;
+    position: relative;
+    left: 400px;
+    top: -300px;
+}
+#addToTrip_btn
+{
+    position: relative;
+    left: 200px;
+    top: -300px;
 }
 
 #stateSelect {
@@ -62,8 +70,12 @@ button {
     color:black;
     background-color: white;
     border-radius: 15px;
-    transform:translateY(-900px);
-    transform:translateX(-540px);
+    /* transform:translateY(00px);
+    transform:translateX(-560px); */
+     position: relative;
+    left: -600px;
+    top: -230px;
+    font-size: 27px;
 }
 
 .dirt-road-bottom {
