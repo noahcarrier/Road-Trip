@@ -46,39 +46,25 @@ function updateLandmark(dirId, lmName, lmDesc){
     return firebase.database().ref().update(update);
 }
 
-// updates the laws for the state
-function updateLaws(dirId, desc) {
-    console.log("adding for " + dirId + " new law: " + desc);
-    let lawCount = 1;
-    let i = 1;
-    let data;
-    // loop finds appropriate database directory to add law description
-    for(i = 1; i != 0; i++) {
-        // get the data contained at law directory i
-        var currentLaw = firebase.database().ref('state-info/' + dirId + '/laws/law' + i);
-        currentLaw.on('value', (snapshot) => {
-            data = snapshot.val();
-            console.log(data);
-        });
+// Updates the law for the state
+function updateLaw(dirId, desc) {
+    console.log("updating " + dirId + " law to " + desc);
+    var update = {};
+    update['state-info/' + dirId + '/law/description'] = desc;
 
-        // if the data is empty, i represents the directory number to add description
-        if(data == "" || data == null) {
-            lawCount = i;
-            i = -1; // this breaks out of loop
-        }
-    }
-    // lawCount now represents the correct directory to insert description
-    firebase.database().ref('state-info/' + dirId + '/laws/law' + lawCount).set({
-        description: desc,
-    });
+    return firebase.database().ref().update(update);
 }
 
-// updates appropriate data in database when submit is clicked
+// Updates appropriate data in database when submit is clicked
 adminSubmit.addEventListener("click", function(e){
     console.log("you want to update " + adminDataField.value);
     if(adminDataField.value == "dbLandmark") {
         updateLandmark(adminStateDd.value, adminNameEntry.value, adminDescEntry.value);
     } else if(adminDataField.value == "dbLaws") {
-        updateLaws(adminStateDd.value, adminDescEntry.value);
+        updateLaw(adminStateDd.value, adminDescEntry.value);
     }
+
+    adminDescEntry.value = "";
+    adminNameEntry.value = "";
 });
+
