@@ -8,11 +8,17 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <title>RoadTrip Florida</title>
         <link rel = "stylesheet" href = "src/css/floridastyles.css">
-        <script src="/src/scripts/florida.js"></script>
+
+        <!-- scripts -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+        <script src="src/scripts/initialize.js"></script> 
+        <script defer src="src/scripts/state.js"></script>
     </head>
     <body style = "background-color: #98e0e5">
         <h1 class = "title1">Welcome to</h1>
         <h1 class = "title2">FLORIDA!</h1>
+        <h2 id="stateId" style.display="none">FL</h2>
 
         <!-- Images -->
         <img class = "florida-sun" src = "icons/FloridaSun.png" alt = "Florida Sun Icon" width = "500" height = "500">
@@ -24,9 +30,9 @@
         <img class = "triangle-button-middle" src = "icons/TriangleButton.png" alt = "Triangle Button Icon" width = "200" height = "200">
         <img class = "triangle-button-bottom" src = "icons/TriangleButton.png" alt = "Triangle Button Icon" width = "200" height = "200">
          -->
-        <!-- <h2 class = "road-rules-text">Road Rules</h2>
-        <h2 class = "fun-facts-text">Fun Facts</h2>
-        <h2 class = "landmarks-text">Landmarks</h2> -->
+        <!-- <h2 class = "road-rules-text">Interesting Road Rules</h2> -->
+        <!-- <h2 class = "fun-facts-text">Fun Facts</h2> -->
+        <!-- <h2 class = "landmarks-text">Landmarks</h2> -->
 
 
         <footer>
@@ -90,17 +96,17 @@
 <body>
 <button class="accordion">Road Rules</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p id="FL-lawDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
-<button class="accordion">Fun Facts</button>
+<!-- <button class="accordion">Fun Facts</button>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+</div> -->
 
-<button class="accordion">Landmarks</button>
+<button id="FL-lmName" class="accordion">Landmark</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p id="FL-lmDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <script>
