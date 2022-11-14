@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
         <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <title>Plan Your Trip!</title>
+        <title>RoadTrip Plan Your Trip!</title>
         <link rel = "stylesheet" href = "src/css/plantrip.css">
     </head>
     <body style = "background-color: #98e0e5">
@@ -14,13 +13,11 @@
         <img class = "road" src = "icons/Road.png" alt = "Road Icon" width = "1700" height = "725">
         <img class = "dirt-road-top" src = "icons/DirtRoad.png" alt = "Dirt Road Top Icon" width = "2000" height = "250">
         <img class = "car" src = "icons/car.png" alt = "Car Icon" width = "625" height = "625">
-        <!-- <img class = "menu-bar" src = "icons/MenuBar.png" alt = "Menu Bar Icon" width = "750" height = "700"> -->
         <img class = "cloud-left" src = "icons/Cloud.png" alt = "Cloud Icon" width = "600" height = "600">
         <img class = "tree-stump" src = "icons/TreeStump.png" alt = "Tree Stump Icon" width = "400" height = "400">
         <img class = "cactus" src = "icons/Cactus.png" alt = "Cactus Icon" width = "550" height = "550">
         <img class = "bush" src = "icons/Bush.png" alt = "Bush Icon" width = "400" height = "400">
         <img class = "cloud-right" src = "icons/Cloud.png" alt = "Cloud Icon" width = "600" height = "600">
-        <!-- <img class = "arrow-button" src = "icons/ArrowButton.png" alt = "Arrow Button Icon" width = "175" height = "175"> -->
 
         <h1>Plan Your Trip!</h1> 
 
@@ -80,26 +77,24 @@
         <!-- <button id = "addToTrip_btn">Add to Trip</button>
         <button id = "finishTrip_btn">Finished with Trip</button> -->
 
- <button class = "done_btn" type = "Done" onclick="javascript:goToProperPage();"> Done </button>
+        <button class = "done_btn" type = "Done" onclick="javascript:goToProperPage();"> Done </button>
         
-<script> 
-
-  function goToProperPage() {
-        var url;
-        var location = document.getElementById("stateSelect").value;
-        if (location == 'AL') {
-            url = 'alabama.html';
+        <script> 
+            function goToProperPage() {
+            var url;
+            var location = document.getElementById("stateSelect").value;
+            if (location == 'AL') {
+                url = 'alabama.html';
+            }
+            if (location == 'FL') {
+                url = 'florida.html';
+            }
+            window.location.href=url;
         }
-        if (location == 'FL') {
-            url = 'florida.html';
-        }
-        window.location.href=url;
-    }
+        </script>
 
+        <button id = "goback_btn" onclick="window.location.href='index.html';">Home</button>
 
-
-
-</script>
         <footer>
             RoadTrip Project Created By Team 20: Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
         </footer>

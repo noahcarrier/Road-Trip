@@ -9,7 +9,7 @@
         <title>RoadTrip Florida</title>
         <link rel = "stylesheet" href = "src/css/floridastyles.css">
 
-        <!-- scripts -->
+        <!-- Scripts -->
         <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
         <script src="src/scripts/initialize.js"></script> 
@@ -23,112 +23,106 @@
         <!-- Images -->
         <img class = "florida-sun" src = "icons/FloridaSun.png" alt = "Florida Sun Icon" width = "500" height = "500">
         <img class = "florida-gator" src = "icons/FloridaGator.png" alt = "Florida Gator Icon" width = "550" height = "550">
-        <!-- <img class = "menu-bar-top" src = "icons/MenuBar.png" alt = "Menu Bar Icon" width = "600" height = "600">
-        <img class = "menu-bar-middle" src = "icons/MenuBar.png" alt = "Menu Bar Icon" width = "600" height = "600">
-        <img class = "menu-bar-bottom" src = "icons/MenuBar.png" alt = "Menu Bar Icon" width = "600" height = "600">
-        <img class = "triangle-button-top" src = "icons/TriangleButton.png" alt = "Triangle Button Icon" width = "200" height = "200">
-        <img class = "triangle-button-middle" src = "icons/TriangleButton.png" alt = "Triangle Button Icon" width = "200" height = "200">
-        <img class = "triangle-button-bottom" src = "icons/TriangleButton.png" alt = "Triangle Button Icon" width = "200" height = "200">
-         -->
-        <!-- <h2 class = "road-rules-text">Interesting Road Rules</h2> -->
-        <!-- <h2 class = "fun-facts-text">Fun Facts</h2> -->
-        <!-- <h2 class = "landmarks-text">Landmarks</h2> -->
-
 
         <footer>
             RoadTrip Project Created By Team 20: Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
         </footer>
-<!-- ACCORDIAN SECTION -->
-<style>
-    @font-face {
-    font-family: norwester;
-    src: url(/fonts/norwester.ttf); 
-}
-.accordion {
-  background-color: #eee;
-  color: rgb(11, 11, 11);
-  cursor: pointer;
-  padding: 18px;
-  width: 49%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 70px;
-  transition: 0.4s;
-  border-radius: 500px;
-  border: 8px solid #040404;
-  margin: 10px;
-  font-family: norwester;
-  left: 350px;
-  bottom: -20px;
-  position:relative;
-}
+        
+        <!-- ACCORDIAN SECTION -->
+        <style>
+            @font-face {
+            font-family: norwester;
+            src: url(/fonts/norwester.ttf); 
+        }
+        .accordion {
+          background-color: #eee;
+          color: rgb(11, 11, 11);
+          cursor: pointer;
+          padding: 18px;
+          width: 49%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 70px;
+          transition: 0.4s;
+          border-radius: 500px;
+          border: 8px solid #040404;
+          margin: 10px;
+          font-family: norwester;
+          font-size: 50px; 
+          left: 350px;
+          bottom: -20px;
+          position:relative;
+        }
 
-.active, .accordion:hover {
-  background-color: rgb(144, 139, 139); 
-}
+        .active, .accordion:hover {
+          background-color: rgb(144, 139, 139); 
+        }
 
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-  position: relative;
-  bottom: -20px;
-  font-family: norwester;
-  font-size: 23px;
-  width: 750px;
-  border: 8px solid #040404;
-  right: -300px;
-}
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+          position: relative;
+          bottom: -20px;
+          font-family: norwester;
+          font-size: 23px;
+          width: 750px;
+          border: 8px solid #040404;
+          right: -300px;
+        }
 
- .accordion:after {
-  content: "\➤"; /* Unicode character for "plus" sign (+) */
-   font-size: 80px;
-  color: rgb(3, 2, 2);
-  float: left;
-  margin-left: 20px;
-} 
+        .accordion:after {
+          content: "\➤"; /* Unicode character for "plus" sign (+) */
+          font-size: 50px;
+          color: rgb(3, 2, 2);
+          float: left;
+          margin-left: 20px;
+          margin-right: 10px; 
+        } 
 
- .active:after {
-  content: "\▼"; /* Unicode character for "minus" sign (-) */
-}
+        .active:after {
+          content: "\▼"; /* Unicode character for "minus" sign (-) */
+        }
 
-</style>
-</head>
-<body>
-<button class="accordion">Road Rules</button>
-<div class="panel">
-  <p id="FL-law">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+        </style>
+        </head>
+        <body>
+        <button class="accordion">Road Rules</button>
+        <div class="panel">
+          <p id="FL-law">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
 
-<!-- <button class="accordion">Fun Facts</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div> -->
+        <!-- <button class="accordion">Fun Facts</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> -->
 
-<button id="FL-lmName" class="accordion">Landmark</button>
-<div class="panel">
-  <p id="FL-lmDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+        <button id="FL-lmName" class="accordion">Landmark</button>
+        <div class="panel">
+          <p id="FL-lmDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-<!-- END OF ACCORDIAN SECTION -->
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+        <!-- END OF ACCORDIAN SECTION -->
 
+        <!-- Goes back to the Plan Your Trip page -->
+        <button id = "goback_btn" onclick="window.location.href='plantrip.html';">Plan Your Trip!</button>
     </body>
 </html>

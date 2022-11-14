@@ -63,6 +63,21 @@ h2 {
     position: absolute; 
 }
 
+#goback_btn {
+    font-family: norwester;
+    font-size: 35px;
+    color: white; 
+    background-color: #155ac1; 
+    padding: 10px 20px;
+    top: 45px; 
+    left: 1150px; 
+    position: absolute; 
+    border-radius: 12px; 
+    border: 1px solid #155ac1; 
+    cursor: pointer; 
+    transition-duration: 0.4s; 
+}
+
 /* .menu-bar-top {
     top: 70px; 
     left: 420px; 

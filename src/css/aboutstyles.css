@@ -75,28 +75,28 @@ h3 {
 
 #goback_btn {
     font-family: norwester;
-    font-size: 30px;
-    color: #98e0e5; 
-    background-color: white; 
+    font-size: 35px;
+    color: white; 
+    background-color: #155ac1; 
     padding: 10px 20px;
-    top: 648px; 
-    left: 230px; 
+    top: 649px; 
+    left: 280px; 
     position: absolute; 
     border-radius: 12px; 
-    border: 1px solid white; 
+    border: 1px solid #155ac1; 
     cursor: pointer; 
     transition-duration: 0.4s; 
 }
 .next p {
     font-family: norwester; 
     font-size: 35px; 
-    background-color:white; 
-    color: #98e0e5;
-     top: 610px; 
+    background-color: #155ac1; 
+    color: white;
+    top: 612px; 
     right: 280px;  
     padding: 10px 20px; 
     position: absolute; 
-    border: 1px solid #white; 
+    border: 1px solid #155ac1; 
     border-radius: 12px; 
     cursor: pointer; 
 }

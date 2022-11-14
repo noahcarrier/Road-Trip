@@ -41,7 +41,7 @@ h3 {
     color: #155ac1;
     position: absolute; 
     top: 150px; 
-    left: 400px; 
+    left: 420px; 
 }
 button {
     font-family: norwester;
@@ -68,6 +68,7 @@ button {
       border-radius: 500px;
   border: 8px solid #040404;
 }
+
 #addToTrip_btn
 {
     background-color: white; 
@@ -77,15 +78,31 @@ button {
       border-radius: 500px;
   border: 8px solid #040404;
 } */
+
 .done_btn
 {
     background-color: white; 
     position: relative;
-    left: 460px;
+    left: 478px;
     top: -350px;
-      border-radius: 500px;
-  border: 8px solid #040404;
+    border-radius: 500px;
+    border: 8px solid black;
 } 
+
+#goback_btn {
+    font-family: norwester;
+    font-size: 35px;
+    color: white; 
+    background-color: #155ac1; 
+    padding: 10px 20px;
+    top: 380px; 
+    left: 477px; 
+    position: absolute; 
+    border-radius: 12px; 
+    border: 1px solid #155ac1; 
+    cursor: pointer; 
+    transition-duration: 0.4s; 
+}
 
 #stateSelect {
     border-color: black;
@@ -94,9 +111,9 @@ button {
     border-radius: 15px;
     /* transform:translateY(00px);
     transform:translateX(-560px); */
-     position: relative;
-    left: -600px;
-    top: -290px;
+    position: relative;
+    left: -580px;
+    top: -280px;
     font-size: 27px;
 }
 
@@ -123,12 +140,6 @@ button {
     left: -70px; 
     position: absolute; 
 }
-
-/*.menu-bar {
-    top: -40px; 
-    left: 350px; 
-    position: absolute; 
-}*/
 
 .cloud-left {
     top: -200px; 
@@ -188,9 +199,3 @@ button {
    70% {left: 190px; }
    100% {left: 180px; }
 }  
-
-/*.arrow-button {
-    top: 225px; 
-    left: 450px; 
-    position: absolute; 
-}*/
