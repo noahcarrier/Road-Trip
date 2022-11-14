@@ -8,6 +8,12 @@
     src: url(/fonts/norwester.ttf); 
 }
 
+body
+{
+    background-color: #98e0e5;
+    overflow:hidden;
+     margin:0;
+}
 
 footer {
     position: fixed;
@@ -26,21 +32,21 @@ h1 {
     color: black;
     position: absolute; 
     top: -5px; 
-    left: 430px; 
+    left: 400px; 
 }
 
 h3 {
     font-family: norwester; 
     font-size: 45px;
-    color: white;
+    color: #155ac1;
     position: absolute; 
-    top: 295px; 
-    left: 320px; 
+    top: 150px; 
+    left: 400px; 
 }
 button {
     font-family: norwester;
     font-size: 30px;
-    color: #155ac1; 
+    color: #0b0c0d; 
     padding: 10px 20px;
     top: 550px; 
     left: 450px; 
@@ -53,17 +59,33 @@ button {
     transform:translateY(-900px);
     transform:translateX(196px);
 }
-#finishTrip_btn {
+/* #finishTrip_btn 
+{
+    background-color: white; 
     position: relative;
     left: 400px;
     top: -300px;
+      border-radius: 500px;
+  border: 8px solid #040404;
 }
 #addToTrip_btn
 {
+    background-color: white; 
     position: relative;
     left: 200px;
     top: -300px;
-}
+      border-radius: 500px;
+  border: 8px solid #040404;
+} */
+.done_btn
+{
+    background-color: white; 
+    position: relative;
+    left: 460px;
+    top: -350px;
+      border-radius: 500px;
+  border: 8px solid #040404;
+} 
 
 #stateSelect {
     border-color: black;
@@ -74,7 +96,7 @@ button {
     transform:translateX(-560px); */
      position: relative;
     left: -600px;
-    top: -230px;
+    top: -290px;
     font-size: 27px;
 }
 

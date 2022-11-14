@@ -7,7 +7,12 @@
     font-family: norwester;
     src: url(/fonts/norwester.ttf); 
 }
-
+body
+{
+    background-color: #98e0e5;
+    overflow:hidden;
+     margin:0;
+}
 footer {
     position: fixed;
     padding: 10px 10px 0px 10px;
@@ -75,7 +80,7 @@ h3 {
     background-color: white; 
     padding: 10px 20px;
     top: 648px; 
-    left: 250px; 
+    left: 230px; 
     position: absolute; 
     border-radius: 12px; 
     border: 1px solid white; 
@@ -87,7 +92,7 @@ h3 {
     font-size: 35px; 
     background-color:white; 
     color: #98e0e5;
-       top: 610px; 
+     top: 610px; 
     right: 280px;  
     padding: 10px 20px; 
     position: absolute; 

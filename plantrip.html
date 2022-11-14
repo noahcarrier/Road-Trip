@@ -24,7 +24,7 @@
 
         <h1>Plan Your Trip!</h1> 
 
-        <h3 style = "margin-left:100px; margin-top:-50px;">Pick the next State in your route: </h3>
+        <h3>Pick the next state in your route: </h3>
 
         <select id="stateSelect" placeholder="Choose your state">
             <option value="AL">Alabama</option>
@@ -77,11 +77,29 @@
             <option value="WY">Wyoming</option>
         </select>
 
-        <button id = "addToTrip_btn">Add to Trip</button>
-        <button id = "finishTrip_btn">Finished with Trip</button>
+        <!-- <button id = "addToTrip_btn">Add to Trip</button>
+        <button id = "finishTrip_btn">Finished with Trip</button> -->
 
-
+ <button class = "done_btn" type = "Done" onclick="javascript:goToProperPage();"> Done </button>
         
+<script> 
+
+  function goToProperPage() {
+        var url;
+        var location = document.getElementById("stateSelect").value;
+        if (location == 'AL') {
+            url = 'alabama.html';
+        }
+        if (location == 'FL') {
+            url = 'florida.html';
+        }
+        window.location.href=url;
+    }
+
+
+
+
+</script>
         <footer>
             RoadTrip Project Created By Team 20: Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
         </footer>
