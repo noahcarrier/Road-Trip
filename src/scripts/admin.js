@@ -34,7 +34,7 @@ adminContBtn.addEventListener("click", function(e){
     }
     fieldToggle(adminDescDiv);
     fieldToggle(adminSubmit);
-});
+}); 
 
 // Updates the landmark for the state
 function updateLandmark(dirId, lmName, lmDesc){
@@ -57,12 +57,15 @@ function updateLaw(dirId, desc) {
 
 // Updates appropriate data in database when submit is clicked
 adminSubmit.addEventListener("click", function(e){
-    console.log("you want to update " + adminDataField.value);
     if(adminDataField.value == "dbLandmark") {
         updateLandmark(adminStateDd.value, adminNameEntry.value, adminDescEntry.value);
+        fieldToggle(adminDescDiv);
+        fieldToggle(adminNameDiv);
     } else if(adminDataField.value == "dbLaws") {
         updateLaw(adminStateDd.value, adminDescEntry.value);
+        fieldToggle(adminDescDiv);
     }
+    fieldToggle(adminSubmit);
 
     adminDescEntry.value = "";
     adminNameEntry.value = "";
