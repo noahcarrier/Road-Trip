@@ -81,21 +81,7 @@
         <button id = "finishTrip_btn">Finished with Trip</button> -->
         <button id="tempAdd">tempAdd</button>
 
-        <button class = "done_btn" type = "Done" onclick="javascript:goToProperPage();"> Done </button>
-        
-        <script> 
-            function goToProperPage() {
-            var url;
-            var location = document.getElementById("stateSelect").value;
-            if (location == 'AL') {
-                url = 'alabama.html';
-            }
-            if (location == 'FL') {
-                url = 'florida.html';
-            }
-            window.location.href=url;
-        }
-        </script>
+        <button id = "done_btn"> Done </button>
 
         <button id = "goback_btn" onclick="window.location.href='index.html';">Home</button>
 
