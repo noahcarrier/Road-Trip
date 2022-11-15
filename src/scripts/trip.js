@@ -55,17 +55,18 @@ for (let i = 0; i < 48 ; i++) {
 var trip = new Array();
 trip = localStorage.getItem("yourTrip");
 
+console.log(trip);
+
 for (let i = 0; i < trip.length; i++) {
     stateVisibility[trip[i]] = true;
+    console.log(trip[i] + " is true!");
 }
 
 console.log(stateVisibility);
 
+
 if (stateVisibility[AL] === false) {
     document.getElementById('ALinfo').style.display = 'none';
-}
-if (stateVisibility[AK] === false) {
-    document.getElementById('AKinfo').style.display = 'none';
 }
 if (stateVisibility[AZ] === false) {
     document.getElementById('AZinfo').style.display = 'none';
@@ -105,6 +106,9 @@ if (stateVisibility[IA] === false) {
 }
 if (stateVisibility[KS] === false) {
     document.getElementById('KSinfo').style.display = 'none';
+}
+if (stateVisibility[KY] === false) {
+    document.getElementById('KYinfo').style.display = 'none';
 }
 if (stateVisibility[LA] === false) {
     document.getElementById('LAinfo').style.display = 'none';
