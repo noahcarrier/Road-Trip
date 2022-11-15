@@ -32,6 +32,7 @@ h1 {
     position: absolute; 
     top: 10px; 
     left: 400px; 
+    animation: 1s anim-lineUp ease-out;
 }
 
 h3 {
@@ -41,6 +42,7 @@ h3 {
     position: absolute; 
     top: 295px; 
     left: 320px; 
+     animation: 1s anim-lineUp ease-out;
 }
 
 .canyon {
@@ -49,17 +51,6 @@ h3 {
     position: absolute; 
 }
 
-.left-red-star {
-    top: 85px; 
-    left: 220px; 
-    position: absolute; 
-}
-
-.right-red-star {
-    top: 85px; 
-    left: 987px; 
-    position: absolute; 
-}
 
 .mountains {
     top: 14px; 
@@ -141,4 +132,48 @@ h3 {
 dropdown content is shown */
 .dropdown:hover .drop-button {
     background-color: #155ac1;
+}
+
+.right-red-star {
+    top: 100px; 
+    left: 745px; 
+     position: relative;
+    
+    -webkit-animation:spin 2.5s linear infinite;
+    -moz-animation:spin 2.5s linear infinite;
+    animation:spin 2.5s linear infinite;
+   
+}
+
+.left-red-star {
+    top: 90px; 
+    left: 215px; 
+    position: relative;
+    
+    -webkit-animation:spin 2.5s linear infinite;
+    -moz-animation:spin 2.5s linear infinite;
+    animation:spin 2.5s linear infinite;
+  
+  
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
 }

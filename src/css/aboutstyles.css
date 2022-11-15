@@ -31,41 +31,52 @@ h1 {
     position: absolute; 
     top: -25px; 
     left: 580px; 
+      animation: 2s anim-lineUp ease-out;
+      
 }
 
 h3 {
     font-family: norwester; 
-    font-size: 26px;
+    font-size: 36px;
+      animation: 2s anim-lineUp ease-out;
 }
 
 .road-signs {
     top: -160px; 
     left: 100px;
     position: absolute;
+     
 }
 
 .first-txt {
     position: absolute; 
+    top: 170px; 
+    left: 400px;
+    text-align: center;
+}
+.first-txt2 {
+    position: absolute; 
     top: 210px; 
-    left: 250px;
+    left: 310px;
+    
 }
 
 .second-txt {
     position: absolute; 
-    top: 300px; 
-    left: 655px; 
+    top: 280px; 
+    left: 625px; 
 }
 
 .third-txt {
     position: absolute; 
-    top: 390px; 
-    left: 660px; 
+    top: 375px; 
+    left: 630px; 
 }
 
 .fourth-txt {
     position: absolute; 
-    top: 500px; 
-    left: 615px; 
+    top: 484px; 
+    left: 550px; 
 }
 .fifth-txt {
     position: absolute; 
@@ -101,3 +112,20 @@ h3 {
     cursor: pointer; 
 }
 
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
