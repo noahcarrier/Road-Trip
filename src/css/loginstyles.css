@@ -34,6 +34,7 @@ h1 {
     position: absolute; 
     top: -25px; 
     left: 580px; 
+    animation: 2s anim-lineUp ease-out;
 }
 
 h3 {
@@ -121,4 +122,22 @@ input[type=password] {
     left: 550px; 
     position: absolute; 
 }
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
