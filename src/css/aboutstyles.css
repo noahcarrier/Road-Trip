@@ -31,8 +31,7 @@ h1 {
     position: absolute; 
     top: -25px; 
     left: 580px; 
-      animation: 2s anim-lineUp ease-out;
-      
+    animation: 2s anim-lineUp ease-out;
 }
 
 h3 {
