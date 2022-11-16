@@ -83,8 +83,18 @@ button {
 {
     background-color: white; 
     position: relative;
-    left: 478px;
-    top: -350px;
+    left: 400px;
+    top: -600px;
+    border-radius: 500px;
+    border: 8px solid black;
+} 
+
+#tempAdd
+{
+    background-color: white; 
+    position: relative;
+    left: 0px;
+    top: 0px;
     border-radius: 500px;
     border: 8px solid black;
 } 

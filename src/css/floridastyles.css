@@ -14,7 +14,11 @@ body
     overflow:hidden;
      margin:0;
 }
-
+h4
+{ 
+    font-size: 0px;
+    color: transparent;
+ }
 
 footer {
     position: fixed;
