@@ -121,6 +121,7 @@ input[type=password] {
     top: 120px; 
     left: 550px; 
     position: absolute; 
+    animation: 2s anim-lineUp ease-out;
 }
 
 @keyframes anim-lineUp {

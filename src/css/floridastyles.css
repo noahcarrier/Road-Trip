@@ -69,6 +69,18 @@ h2 {
     position: absolute; 
 }
 
+.cowboy-hat {
+    top: 400px; 
+    left: 1020px; 
+    position: absolute; 
+}
+
+.oscar {
+    top: 350px; 
+    left: 1050px; 
+    position: absolute; 
+}
+
 #goback_btn {
     font-family: norwester;
     font-size: 35px;
