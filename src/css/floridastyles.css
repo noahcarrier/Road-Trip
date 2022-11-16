@@ -14,9 +14,10 @@ body
     overflow:hidden;
      margin:0;
 }
-h4
-{ 
-    font-size: 0px;
+
+ #stateId
+ {
+        font-size: 0px;
     color: transparent;
  }
 
@@ -74,7 +75,7 @@ h2 {
     background-color: #155ac1; 
     padding: 10px 20px;
     top: 45px; 
-    left: 1150px; 
+    left: 20px; 
     position: absolute; 
     border-radius: 12px; 
     border: 1px solid #155ac1; 
