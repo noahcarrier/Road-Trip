@@ -24,7 +24,7 @@ footer {
     font-family: norwester;
 }
 
-.stateId {
+h1 {
     font-family: noot;
     font-size: 100px; 
     color: black;
@@ -81,7 +81,7 @@ h3 {
 .fifth-txt {
     position: absolute; 
     top: 620px; 
-    left: 630px; 
+    left: 580px; 
 }
 
 #goback_btn {

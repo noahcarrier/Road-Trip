@@ -33,6 +33,7 @@ h1 {
     position: absolute; 
     top: -5px; 
     left: 400px; 
+    animation: 2s anim-lineUp ease-out;
 }
 
 h3 {
@@ -42,6 +43,7 @@ h3 {
     position: absolute; 
     top: 150px; 
     left: 420px; 
+    animation: 2s anim-lineUp ease-out;
 }
 button {
     font-family: norwester;
@@ -78,15 +80,20 @@ button {
       border-radius: 500px;
   border: 8px solid #040404;
 } */
-
-.done_btn
+#done_btn
 {
-    background-color: white; 
-    position: relative;
-    left: 400px;
-    top: -600px;
-    border-radius: 500px;
+       font-family: norwester;
+    font-size: 35px;
+    color: rgb(0, 0, 0); 
+    background-color: #ffffff; 
+    padding: 10px 20px;
+    top: 500px; 
+    left: 500px; 
+    position: absolute; 
+     border-radius: 500px;
     border: 8px solid black;
+    cursor: pointer; 
+    transition-duration: 0.4s; 
 } 
 
 #tempAdd
@@ -105,8 +112,8 @@ button {
     color: white; 
     background-color: #155ac1; 
     padding: 10px 20px;
-    top: 380px; 
-    left: 477px; 
+    top: -40px; 
+    left: -160px; 
     position: absolute; 
     border-radius: 12px; 
     border: 1px solid #155ac1; 
@@ -209,3 +216,20 @@ button {
    70% {left: 190px; }
    100% {left: 180px; }
 }  
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
