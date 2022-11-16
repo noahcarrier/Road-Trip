@@ -51,13 +51,13 @@ h3 {
 .first-txt {
     position: absolute; 
     top: 170px; 
-    left: 400px;
+    left: 420px;
     text-align: center;
 }
 .first-txt2 {
     position: absolute; 
     top: 210px; 
-    left: 310px;
+    left: 330px;
     
 }
 
@@ -81,7 +81,7 @@ h3 {
 .fifth-txt {
     position: absolute; 
     top: 620px; 
-    left: 580px; 
+    left: 585px; 
 }
 
 #goback_btn {
