@@ -6,6 +6,6 @@ Road Trip
 
 ---
 
-*Front-End Team: Daisy Nguyen & Dynie Mesoneuvre
-Back-End Team: Anna Macinnis & Daisy Nguyen
-Project Leads: Noah Carrier & Dynie Mesoneuvre*
+*Front-End Team: Daisy Nguyen & Dynie Mesoneuvre*
+*Back-End Team: Anna Macinnis & Daisy Nguyen*
+*Project Leads: Noah Carrier & Dynie Mesoneuvre*
